@@ -9,23 +9,44 @@
 <body>
     <div id="imagens">
         <div id="imagensr1">
-            <img id="css" class="image-transition" src="../img/CSSBlack.png" alt="" onmouseenter="mudar('css')" onmouseleave="restaurar('css')">
-            <img id="html" class="image-transition" src="../img/HTML5Black.png" alt="" onmouseenter="mudar('html')" onmouseleave="restaurar('html')">
+            <img id="css" class="image-transition" src="../img/CSSBlack.png" alt="" onmouseenter="mudar('css')" onmouseleave="restaurar('css')" onclick="mostrarTexto('css')">
+            <img id="html" class="image-transition" src="../img/HTML5Black.png" alt="" onmouseenter="mudar('html')" onmouseleave="restaurar('html')" onclick="mostrarTexto('html')">
         </div>
         <div id="imagensr2">
-            <img id="js" class="image-transition" src="../img/JavaScriptBlack.png" alt="" onmouseenter="mudar('js')" onmouseleave="restaurar('js')">
-            <img id="python" class="image-transition" src="../img/PythonBlack.png" alt="" onmouseenter="mudar('python')" onmouseleave="restaurar('python')">
+            <img id="js" class="image-transition" src="../img/JavaScriptBlack.png" alt="" onmouseenter="mudar('js')" onmouseleave="restaurar('js')" onclick="mostrarTexto('js')">
+            <img id="python" class="image-transition" src="../img/PythonBlack.png" alt="" onmouseenter="mudar('python')" onmouseleave="restaurar('python')" onclick="mostrarTexto('python')">
         </div>
     </div>
     
     <aside>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, eos perspiciatis at eius, odio fugiat quis dolorum vitae reprehenderit ab, est architecto voluptas corporis consectetur fuga vero laudantium totam iste.</p>
+        <p id="texto">/* Conhecimentos em Tecnologias */</p>
     </aside>
 
     <script>
+        function mostrarTexto(id) {
+            let text = document.querySelector('#texto');
+            switch (id) {
+                case 'css':
+                    text.textContent = '/* CSS3 Cascate Style Sheet */';
+                    break;
+                case 'html':
+                    text.textContent = '/* HTML5 Hyper Text Markup Language */';
+                    break;
+                case 'js':
+                    text.textContent = '/* JavaScript: A good way to make your site interactive */';
+                    break;
+                case 'python':
+                    text.textContent = '/* Python: Simple and efficient programming language */';
+                    break;
+                default:
+                    break;
+            }
+        }
+
         function mudar(id) {
             // Seleciona o elemento de imagem com base no ID passado como argumento
             let imagem = document.querySelector(`#${id}`);
+
             
             // Define o novo valor para o atributo 'src' com base no ID
             switch (id) {
