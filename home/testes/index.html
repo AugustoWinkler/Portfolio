@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="imagens">
+        <div id="imagensr1">
+            <img id="css" class="image-transition" src="../img/CSSBlack.png" alt="" onmouseenter="mudar('css')" onmouseleave="restaurar('css')">
+            <img id="html" class="image-transition" src="../img/HTML5Black.png" alt="" onmouseenter="mudar('html')" onmouseleave="restaurar('html')">
+        </div>
+        <div id="imagensr2">
+            <img id="js" class="image-transition" src="../img/JavaScriptBlack.png" alt="" onmouseenter="mudar('js')" onmouseleave="restaurar('js')">
+            <img id="python" class="image-transition" src="../img/PythonBlack.png" alt="" onmouseenter="mudar('python')" onmouseleave="restaurar('python')">
+        </div>
+    </div>
+    
+    <aside>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, eos perspiciatis at eius, odio fugiat quis dolorum vitae reprehenderit ab, est architecto voluptas corporis consectetur fuga vero laudantium totam iste.</p>
+    </aside>
+
+    <script>
+        function mudar(id) {
+            // Seleciona o elemento de imagem com base no ID passado como argumento
+            let imagem = document.querySelector(`#${id}`);
+            
+            // Define o novo valor para o atributo 'src' com base no ID
+            switch (id) {
+                case 'css':
+                    imagem.src = '../img/CSSColor.png';
+                    break;
+                case 'html':
+                    imagem.src = '../img/HTML5Color.png';
+                    break;
+                case 'js':
+                    imagem.src = '../img/JavaScriptColor.png';
+                    break;
+                case 'python':
+                    imagem.src = '../img/PythonColor.png';
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        function restaurar(id) {
+            // Seleciona o elemento de imagem com base no ID passado como argumento
+            let imagem = document.querySelector(`#${id}`);
+            
+            // Restaura o valor original do atributo 'src' com base no ID
+            switch (id) {
+                case 'css':
+                    imagem.src = '../img/CSSBlack.png';
+                    break;
+                case 'html':
+                    imagem.src = '../img/HTML5Black.png';
+                    break;
+                case 'js':
+                    imagem.src = '../img/JavaScriptBlack.png';
+                    break;
+                case 'python':
+                    imagem.src = '../img/PythonBlack.png';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    
+</body>
+</html>

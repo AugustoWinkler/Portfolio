@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-image: linear-gradient(to top right, rgb(60, 60, 60), rgb(32, 32, 32));
+    display: flex;
+    width: 100vw;
+}
+#imagens{
+    width: 70%;
+    display: block;
+    flex-wrap: wrap;
+    
+}
+.image-transition {
+    transition: transform 20s ease;
+}
+#imagensr1{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+#imagensr2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside{
+    width: 30%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.578) ;
+}
