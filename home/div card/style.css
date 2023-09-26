@@ -14,7 +14,7 @@ main{
     margin: auto;
     margin-top: 20%;
     border-radius: 15px;
-    background-image: url(../testes/novo teste/imagens/Fundo.png");
+    background-image: url("../testes/novo teste/imagens/Fundo.png");
 }
 h1{
     color: white;
