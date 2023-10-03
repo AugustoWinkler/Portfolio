@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right top, #3e4879 , #1f2147);
+    margin: 0;
+    font-family: monospace;
+
+}
+nav{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    
+}
+li{
+    display: inline;
+    padding: 20px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 12px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.fundo{
+    transform: translateZ(-10px) scale(2);
+
+}
+.montain{
+    transform: translateZ(-6px) scale(1.6);
+
+}
+.midview{
+    transform: translateZ(-4px) scale(1.6);
+
+}
+.firstview{
+    
+
+}
+
+.fundo,.montain,.midview,.firstview{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.tittle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+section{
+    font-size: 2rem;
+    padding: 2rem;
+    background-image: linear-gradient(to right top, #3e4879 , #1f2147);
+    color: white;
+}
+
+section p{
+    font-size: 0.6em;
+    padding-top: 10px;
+}
+section{
+    display: flex;
+    margin-bottom: 100px;
+}
+#imagens{
+    margin-top: 100px;
+    width: 70%;
+    display: block;
+}
+.image-transition {
+    transition: transform 20s ease;
+}
+#imagensr1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagensr2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside{
+    width: 30%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    padding-right: 10vw;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.578) ;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #20ecff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+#next,#prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+#next{
+    left: unset;
+    right: 50px;
+
+}

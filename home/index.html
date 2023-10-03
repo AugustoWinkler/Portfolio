@@ -4,31 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augusto Winkler</title>
-    <link rel="stylesheet" href="styles.style.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onload="loadShow()">
     <nav>
         <ul>
-            <li><p><a href="#">Inicio</a></p></li>
-            <li><p><a href="#">Sobre</a></p></li>
-            <li><p><a href="#">Projetos</a></p></li>
-            <li><p><a href="#">Contato</a></p></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="wrapper">
         <header>
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
+            <img src="imagens/Fundo.png" alt="" class="fundo">
+            <img src="imagens/Mountain.png" alt="" class="montain">
+            <img src="imagens/MidView.png" alt="" class="midview">
+            <img src="imagens/FirstLane.png" alt="" class="firstview">
             <h1 class="tittle">Augusto Winkler</h1>
         </header>
         <section>
-    <footer>
-        <p>$copy Teste</p>
-        <p><a href="">Instagram</a></p>
-        <p><a href="">Facebook</a></p>
+            <div id="imagens">
+                <div id="imagensr1">
+                    <img id="css" class="image-transition" src="imagens/CSSBlack.png" alt="" onmouseenter="mudar('css')" onmouseleave="restaurar('css')" onclick="mostrarTexto('css')">
+                    <img id="html" class="image-transition" src="imagens/HTML5Black.png" alt="" onmouseenter="mudar('html')" onmouseleave="restaurar('html')" onclick="mostrarTexto('html')">
+                </div>
+                <div id="imagensr2">
+                    <img id="js" class="image-transition" src="imagens/JavaScriptBlack.png" alt="" onmouseenter="mudar('js')" onmouseleave="restaurar('js')" onclick="mostrarTexto('js')">
+                    <img id="python" class="image-transition" src="imagens/PythonBlack.png" alt="" onmouseenter="mudar('python')" onmouseleave="restaurar('python')" onclick="mostrarTexto('python')">
+                </div>
+            </div> 
+            <aside>
+            <p id="texto">/* Conhecimentos em Tecnologias */</p>
+            </aside>
+        </section>
+        <div class="slider">
+            <div class="item">
+                <h1>Slide 1</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque iure explicabo voluptates mollitia rerum alias veniam esse commodi quibusdam cum quam deleniti cumque, dolor dolorem perferendis. Fugit, aspernatur cum!
+            </div>
+            <div class="item">
+                <h1>Slide 2</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque iure explicabo voluptates mollitia rerum alias veniam esse commodi quibusdam cum quam deleniti cumque, dolor dolorem perferendis. Fugit, aspernatur cum!
+            </div>
+            <div class="item">
+                <h1>Slide 3</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque iure explicabo voluptates mollitia rerum alias veniam esse commodi quibusdam cum quam deleniti cumque, dolor dolorem perferendis. Fugit, aspernatur cum!
+            </div>
+            <div class="item">
+                <h1>Slide 4</h1>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati reiciendis consequatur sapiente delectus fugit nisi necessitatibus asperiores rerum inventore. Ipsam corrupti consequatur unde sunt incidunt sequi dignissimos provident error.
+                
+            </div>
+            <div class="item">
+                <h1>Slide 5</h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sapiente sed magni, aut odio esse maiores voluptatem eum, mollitia similique aliquam excepturi consequatur earum. Numquam accusamus sint vitae ab cupiditate.
+            </div>
+            <div class="item">
+                <h1>Slide 6</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque iure explicabo voluptates mollitia rerum alias veniam esse commodi quibusdam cum quam deleniti cumque, dolor dolorem perferendis. Fugit, aspernatur cum!
+            </div>
+            <div class="item">
+                <h1>Slide 7</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque iure explicabo voluptates mollitia rerum alias veniam esse commodi quibusdam cum quam deleniti cumque, dolor dolorem perferendis. Fugit, aspernatur cum!
+            </div>
+            <button id="next">></button>
+            <button id="prev"><</button>
+        </div>
+    </div>
 
-    </footer>
+    <script src="app.js">
+      
+    </script>
     
 </body>
 </html>
