@@ -25,6 +25,12 @@ nav{
     border-radius: 100px;
     border: 2px solid white;
 }
+.home:hover{
+    border: 3px solid rgb(171, 169, 236);
+    background-color: rgb(230, 160, 205);
+
+}
+
 li{
     display: inline;
     padding: 10px;
