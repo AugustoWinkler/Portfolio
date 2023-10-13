@@ -9,8 +9,11 @@ body{
 
 }
 menu{
+    position: sticky;
+    text-align: end;
     width: 100vw;
-    background-color: rgb(115, 111, 46);
+    background-color: rgba(0, 0, 0, 0.229);
+    
     
 }
 nav{
@@ -18,10 +21,20 @@ nav{
     z-index: 1;
 
 }
+.home{
+    border-radius: 100px;
+    border: 2px solid white;
+}
 li{
     display: inline;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     
+    
+}
+header h1{
+    margin-top: 20%;
+    text-align: center;
 }
 nav a{
     color: white;
@@ -41,7 +54,7 @@ nav a{
 
 header{
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -54,7 +67,7 @@ header{
 
 }
 .montain{
-    transform: translateZ(-6px) scale(1.6);
+    transform: translateZ(-9px) scale(1.6);
 
 }
 .midview{
@@ -91,11 +104,11 @@ section{
     color: white;
     font-size: 1.5em;
     background-color: #1f2147;
-    height: 400px;
+    height: 600px;
 }
 #sobre p {
     padding: 20px;
-    width: 500px;
+    width: 900px;
     margin: auto;
 }
 
@@ -134,7 +147,7 @@ aside{
     font-size: 1.2em;
     padding-right: 10vw;
 }
-img{
+section img{
     width: 100px;
     height: 100px;
     margin: 10px;
@@ -149,10 +162,10 @@ img{
 }
 .item{
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 180px;
+    height: 290px;
     text-align: justify;
-    background-color: #20ecff;
+    background-color: #f6dbaa;
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
