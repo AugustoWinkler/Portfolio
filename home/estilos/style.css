@@ -101,11 +101,13 @@ section{
     color: white;
 }
 #sobre{
+    padding-top: 200px;
     color: white;
     font-size: 1.5em;
     background-color: #1f2147;
     height: 600px;
 }
+
 #sobre p {
     padding: 20px;
     width: 900px;
