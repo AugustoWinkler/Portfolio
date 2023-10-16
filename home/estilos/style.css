@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to right, #3e4879 , #1f2147);
+    background: fixed;
+    background-image: linear-gradient(to top, #3e4879 , #1f2147);
     margin: 0;
     font-family: monospace;
 
@@ -103,14 +104,13 @@ header{
 section{
     font-size: 2rem;
     padding: 2rem;
-    background-image: linear-gradient(to right top, #3e4879 , #1f2147);
     color: white;
 }
 #sobre{
     padding-top: 200px;
     color: white;
     font-size: 1.5em;
-    background-color: #1f2147;
+    background-color:  #1f2147;
     height: 600px;
 }
 
